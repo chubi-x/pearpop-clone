@@ -1,0 +1,590 @@
+/* COLOR VARIABLES */
+#body {
+  --background-color: linear-gradient(257deg, rgba(58, 54, 76, 1) 0%, rgba(41, 40, 50, 1) 100%);
+  --nav-color: #00F5ED;
+  --text-color: #F3EA00;
+  --primary-color: #333333;
+  --secondary-color: #000000;
+  --tertiary-color: #D822C2;
+  --size-base-width: 85%;
+  --size-max-width: 1100px;
+}
+
+/* STLYES */
+* {
+  box-sizing: border-box;
+  font-size: 0.9rem;
+}
+
+a {
+  text-decoration: none;
+}
+
+#body {
+  font-family: 'Work Sans', sans-serif;
+  margin: 0px;
+  background: var(--background-color);
+  height: 100%;
+  color: white;
+}
+
+/* NAV STYLES */
+
+#nav {
+  background: var(--background-color);
+}
+
+#nav a {
+  color: var(--text-color);
+
+}
+
+#nav li {
+  text-align: center;
+}
+
+.nav-logo-container {
+  /* padding-top:5px; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%
+}
+
+.nav-logo {
+  width: 200px;
+  align-self: center;
+  height: 200%;
+}
+
+#nav .nav-menu {
+  margin-left: auto;
+}
+
+#nav .social-links a {
+  color: var(--tertiary-color);
+}
+
+#nav .social-links li {
+  padding: 10px;
+}
+
+.nav-list {
+  color: var(--tertiary-color);
+}
+
+.nav-list img {
+  width: 100%;
+  height: 40px;
+}
+
+.nav-list .nav-list-button {
+  display: none;
+}
+
+.nav-list .nav-menu {
+  list-style: none;
+  display: flex;
+}
+
+.nav-menu>li {
+  margin: 13px;
+}
+
+/* END OF NAV STYLES */
+
+/* LOGIN AND REGISTER BUTTON STYLES */
+.auth-list {
+  display: flex;
+  list-style: none;
+  justify-content: space-between;
+}
+
+/* CHALLENGE PAGE STYLES */
+.challenge-container {
+  padding-top: 50px;
+  display: flex;
+  width: 100%;
+}
+
+.app-container {
+  width: 70vw;
+  margin: 0 auto;
+  margin-top: 50px;
+  background-color: var(--secondary-color);
+  color: white;
+  padding-bottom: 50px;
+  padding-top: 50px;
+}
+
+figure.challenge-media {
+  width: 700px;
+  padding-left: 40px;
+}
+
+figure.challenge-media img {
+  width: 100%;
+}
+
+#reward-details {
+  width: 100%;
+}
+
+.progress-header-container {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.progress-header-container .tooltip {
+  justify-self: end;
+}
+
+.progress-header-container h2 {
+  text-align: center;
+  font-size: 15px;
+}
+
+#reward-details {
+  padding: 0px 40px 0px 40px;
+}
+
+.reward-instructions {
+  width: 90%;
+  background: var(--background-color);
+  border-radius: 10px;
+  padding: 15px;
+  font-size: 13px;
+}
+
+.challenge-button-container {
+  display: flex;
+  justify-content: center;
+  padding: 40px;
+}
+
+.challenge-buttons {
+  /* margin-right: 300px; */
+  background-color: var(--tertiary-color);
+  cursor: pointer;
+  text-align: center;
+  width: 100%;
+  height: 70px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: bold;
+}
+
+/* CHALLENGE DETAILS STYLES */
+.challenge-details {
+  padding: 0px 50px 0px 50px;
+  font-size: 13px;
+  font-family: 'Work Sans', sans-serif;
+  line-height: 20px;
+  font-weight: 400;
+
+}
+
+.challenge-details-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: var(--tertiary-color);
+  padding: 15px;
+  margin-bottom: 10px;
+}
+
+.challenge-details-header h2 {
+  text-align: center;
+  font-size: 16px;
+}
+
+.challenge-description {
+  padding: 0px 30px 0px 30px;
+}
+
+.challenge-rules {
+  margin: 40px 0px 40px 0px;
+  display: grid;
+  grid-template-columns: 70px auto;
+  grid-column-gap: 2px;
+}
+
+.challenge-rules p {
+  width: 300px;
+}
+
+.challenge-rule-numbers {
+  border-radius: 50%;
+  background-color: var(--text-color);
+  color: black;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* AUTH BUTTON STYLES */
+.register-button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 300px;
+  height: 50px;
+  border-radius: 120px;
+  margin: 0 auto;
+  margin-bottom: 20px;
+  text-align: center;
+  background-color: var(--tertiary-color);
+  cursor: pointer;
+}
+
+.submit-entry {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0px 30px 50px 0px;
+  text-align: center;
+}
+
+.submit-entry input[type="text"] {
+  width: 400px;
+  height: 30px;
+  border-radius: 5px;
+  border: 0px;
+  padding: 10px;
+}
+
+.submit-entry input[type="text"]:focus {
+  outline: none;
+  box-shadow: 0 0 10px #719ECE;
+}
+
+.submit-entry button {
+  width: 100px;
+  height: 40px;
+  color: white;
+  border-radius: 5px;
+  background-color: var(--tertiary-color);
+  font-family: inherit;
+  margin: 10px;
+}
+
+
+/* AUTH PAGE STYLES */
+.auth-container {
+  /* padding: 50px; */
+  width: 500px;
+  margin: 0 auto;
+  /* margin-top: 150px; */
+}
+
+.auth-button-container {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+  /* padding-top: 40px; */
+}
+
+.auth-button {
+  cursor: pointer;
+  background-color: var(--primary-color);
+  text-align: center;
+  width: 100%;
+  height: 70px;
+  font-weight: bold;
+  /* display: flex; */
+}
+
+.auth-button>a {
+  display: inline-block;
+  color: var(--text-color);
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  padding-top: 25px;
+
+}
+
+.auth-button-selected,
+.auth-button-selected>a {
+  background-color: var(--tertiary-color);
+  color: white;
+}
+
+.form-container {
+  color: var(--text-color);
+  background-color: var(--primary-color);
+  padding: 0px;
+  padding-left: 30px;
+  border-radius: 12px;
+}
+
+.form-container h2 {
+  font-size: 20px;
+  padding-top: 15px;
+}
+
+.form-container form input {
+  border: 0px;
+  width: 90%;
+  border-radius: 12px;
+  padding: 10px;
+  margin: 10px 0px 10px 0px;
+}
+
+.form-container form input:focus {
+  outline: none;
+  box-shadow: 0 0 10px var(--tertiary-color);
+}
+
+.form-paragraph p {
+  font-size: 12px;
+  /* margin-left: 50px; */
+  display: inline-block;
+  width: 100%;
+  text-align: center;
+}
+
+.form-paragraph {
+  display: flex;
+  justify-content: center;
+  width: 90%;
+}
+
+.form-paragraph a {
+  color: var(--nav-color);
+}
+
+.auth-submit-button-container {
+  display: flex;
+  justify-content: center;
+  padding-bottom: 20px;
+}
+
+.auth-submit-button {
+  cursor: pointer;
+  display: block;
+  width: 200px;
+  height: 40px;
+  color: white;
+  border-radius: 15px;
+  background-color: var(--tertiary-color);
+  font-family: inherit;
+  border: 0px;
+  text-align: center;
+  margin-right: 20px;
+  margin-top: 15px;
+}
+
+.forgot-password-modal form input {
+  border: 0px;
+  width: 90%;
+  border-radius: 12px;
+  padding: 10px;
+  margin: 10px 0px 10px 0px;
+
+}
+
+.forgot-password-modal form input:focus {
+  outline: none;
+  box-shadow: 0 0 10px var(--tertiary-color);
+}
+
+/* FOOTER STYLES */
+.lb-footer {
+  background: rgb(58, 54, 76);
+  background: linear-gradient(257deg, rgba(58, 54, 76, 1) 0%, rgba(41, 40, 50, 1) 100%);
+  text-transform: uppercase;
+}
+
+.lb-inner {
+  width: 95%;
+  margin: 0 auto;
+  align-items: center;
+}
+
+.lb-footer .lb-inner {
+  width: var(--size-base-width);
+  max-width: var(--size-max-width);
+  margin: 0px auto;
+  padding: 30px 0;
+  padding-top: 30px;
+}
+
+.lb-footer .lb-inner .lb-items {
+  display: flex;
+}
+
+.lb-footer .lb-inner .lb-items>div {
+  padding-right: 80px;
+}
+
+.lb-footer .lb-inner .lb-items a {
+  text-transform: ulbercase;
+  font-size: 11px;
+  color: white;
+}
+
+.lb-footer .lb-inner .lb-row {
+  display: flex;
+  margin: 20px 0;
+  border: none;
+}
+
+.lb-footer .lb-inner .lb-row>div:first-child {
+  flex: 1;
+}
+
+.lb-footer .lb-inner .lb-row>div:last-child {
+  padding: 0 20px;
+}
+
+.lb-footer .lb-inner .lb-row>div:last-child a {
+  padding: 0 10px;
+}
+
+.lb-footer .lb-inner .lb-copyright {
+  color: #9c9c9c;
+  font-size: 10px;
+  text-transform: ulbercase;
+}
+
+.lb-footer .social-links a {
+  color: var(--text-color);
+}
+
+.lb-footer.social-links {
+  padding: 10px;
+}
+
+.lb-footer .lb-inner .lb-fine {
+  font-size: 9px;
+  line-height: 10px;
+  padding: 40px 0;
+  max-width: 80%;
+}
+
+.lb-fine {
+  text-transform: capitalize;
+}
+
+
+/* MEDIA QUERIES */
+@media only screen and (max-width:900px) {
+  .app-container {
+    margin: 0px;
+    width: 100vw;
+  }
+
+  .challenge-button-container {
+    padding: 50px 0px 30px 0px;
+    width: 100vw;
+  }
+}
+
+/* MOBILE AND TABS */
+@media only screen and (max-width: 750px) {
+  .app-container {
+    width: 100vw;
+    margin: 0px;
+  }
+
+  .nav {
+    justify-content: center;
+  }
+
+  .nav-logo {
+    margin-left: 60px;
+    width: 200px;
+  }
+
+  .nav-list .nav-menu {
+    display: none;
+  }
+
+  .nav-list .show-menu {
+    display: block;
+  }
+
+  .nav-list .nav-list-button {
+    display: block;
+    padding-left: 40px;
+  }
+
+  .challenge-container {
+    flex-direction: column;
+  }
+
+  figure.challenge-media {
+    width: 100%;
+    margin: 0px;
+  }
+
+  figure.challenge-media img {
+    width: 100%;
+    /* height: 400px; */
+  }
+
+  .challenge-details {
+    padding: 0px;
+  }
+
+  .challenge-button-container {
+    padding: 0px;
+    padding-bottom: 30px;
+    width: 100vw;
+  }
+
+  .challenge-buttons {
+    width: 100vw;
+    height: 50px;
+    font-size: 13px;
+  }
+
+  .challenge-details-header {
+    width: 100%;
+  }
+
+  .challenge-rules {
+    margin: 40px 0px 40px 20px;
+    display: grid;
+    grid-template-columns: 70px 200px;
+  }
+
+}
+
+
+/* MEDIA QUERIES */
+@media only screen and (max-width: 600px) {
+  .auth-container {
+    padding: 0px;
+    width: 100vw;
+  }
+
+  .form-container {
+    margin: 10px;
+  }
+
+  .auth-submit-button-container {
+    display: block;
+  }
+
+  .auth-submit-button {
+    margin-left: 15vw;
+  }
+
+}
+
+@media only screen and (max-width: 360px) {
+  .auth-submit-button {
+    margin-left: 0px;
+  }
+
+  .nav-list .nav-list-button {
+    display: block;
+    padding-right: 110px;
+  }
+}
