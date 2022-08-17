@@ -155,6 +155,8 @@ figure.challenge-media img {
   border-radius: 10px;
   padding: 15px;
   font-size: 13px;
+  margin: 10px;
+  margin-bottom: 20px;
 }
 
 .challenge-button-container {
@@ -476,6 +478,7 @@ figure.challenge-media img {
 @media only screen and (max-width:900px) {
   .app-container {
     margin: 0px;
+    margin-top: 50px;
     width: 100vw;
   }
 
@@ -490,6 +493,8 @@ figure.challenge-media img {
   .app-container {
     width: 100vw;
     margin: 0px;
+    margin-top: 50px;
+
   }
 
   .nav {
@@ -521,6 +526,7 @@ figure.challenge-media img {
   figure.challenge-media {
     width: 100%;
     margin: 0px;
+    padding: 20px;
   }
 
   figure.challenge-media img {
