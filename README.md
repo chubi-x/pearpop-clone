@@ -1,6 +1,6 @@
 # Pearpop Clone ![](public/logo.png)
 
-This is a clone of the pearpop register,login, and challenges page built with ReactJs.
+This is a pearpop clone built with ReactJs.
 
 # Resources ⚙️
 
