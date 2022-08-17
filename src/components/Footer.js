@@ -11,13 +11,13 @@ export default function Footer() {
         <div className="lb-items">
           <div>
             <div>
-              <a href="#">FAQ</a>
+              <a href="# ">FAQ</a>
             </div>
             <div>
-              <a href="#">BLOG</a>
+              <a href="# ">BLOG</a>
             </div>
             <div>
-              <a href="#">Contact Us</a>
+              <a href="# ">Contact Us</a>
             </div>
           </div>
           <div>
@@ -34,13 +34,13 @@ export default function Footer() {
             &copy; 2022 PearPop &nbsp;&nbsp; All Rights Reserved
           </div>
           <div className="lb-social social-links">
-            <a href="#">
+            <a href="# ">
               <FontAwesomeIcon icon={faDiscord} size="xl" />
             </a>
-            <a href="#">
+            <a href="# ">
               <FontAwesomeIcon icon={faTwitter} size="xl" />
             </a>
-            <a href="#">
+            <a href="# ">
               <FontAwesomeIcon icon={faInstagram} size="xl" />
             </a>
           </div>
