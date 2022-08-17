@@ -11,16 +11,16 @@ export default function Challenge() {
           paddingTop: "30px",
         }}
       >
-        Mannequin Challenge{" "}
-      </h1>{" "}
+        Mannequin Challenge
+      </h1>
       <div className="challenge-rules-container">
         <ChallengeRules />
         <div className="challenge-button-container">
-          <div className="challenge-buttons"> ACCEPT CHALLENGE </div>{" "}
-          <div className="challenge-buttons"> SUBMISSIONS(50) </div>{" "}
-        </div>{" "}
+          <div className="challenge-buttons"> ACCEPT CHALLENGE </div>
+          <div className="challenge-buttons"> SUBMISSIONS(50) </div>
+        </div>
         <Details />
-      </div>{" "}
+      </div>
     </div>
   );
 }
