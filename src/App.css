@@ -524,8 +524,8 @@ figure.challenge-media img {
   }
 
   figure.challenge-media {
-    width: 100%;
-    margin: 0px;
+    width: 80%;
+    margin: 0 auto;
     padding: 20px;
   }
 
